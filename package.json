@@ -1,0 +1,83 @@
+{
+  "name": "@ibm-watson/natural-language-classifier-demo",
+  "version": "1.0.0",
+  "description": "Natural Language Classifier sample application",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/watson-developer-cloud/natural-language-classifier-nodejs.git"
+  },
+  "author": "IBM Corp.",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/watson-developer-cloud/natural-language-classifier-nodejs/issues"
+  },
+  "dependencies": {
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-eslint": "^10.0.1",
+    "babelify": "^10.0.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-browserify": "^1.0.2",
+    "express-rate-limit": "^3.3.2",
+    "express-react-views": "^0.11.0",
+    "express-secure-only": "^0.2.1",
+    "express-status-monitor": "^1.2.3",
+    "helmet": "^3.15.1",
+    "jquery": "^3.3.1",
+    "morgan": "^1.9.1",
+    "prismjs": "^1.15.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.2",
+    "react-addons-pure-render-mixin": "^15.6.2",
+    "react-dom": "^16.8.2",
+    "react-prism": "^4.3.2",
+    "request": "^2.88.0",
+    "uglifyify": "^5.0.1",
+    "watson-developer-cloud": "^3.18.1",
+    "watson-react-components": "^0.6.19"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test-integration": "casperjs test ./test/integration/test.*.js",
+    "test-integration-runner": "NODE_ENV=test node casper-runner.js",
+    "test": "npm run lint && npm run test-unit && npm run test-integration-runner",
+    "test-unit": "mocha test/unit --exit",
+    "lint": "eslint .",
+    "autofix": "eslint --fix .",
+    "codecov": "npm run test && (codecov || true)"
+  },
+  "devDependencies": {
+    "casperjs": "^1.1.4",
+    "codecov": "^3.2.0",
+    "eslint": "^5.14.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.12.4",
+    "mocha": "^6.0.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "supertest": "^4.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "useBuiltIns": "entry"
+        }
+      ],
+      "@babel/preset-react"
+    ]
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
