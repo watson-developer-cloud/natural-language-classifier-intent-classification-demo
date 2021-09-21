@@ -1,3 +1,4 @@
+<h1 align="center" style="border-bottom: none;">Note: this repo has been deprecated and will not receive any additional updates. It has been archived for future commits.</h1>
 <h1 align="center" style="border-bottom: none;">🚀 Natural Language Classifier Intent Classification Sample Code</h1>
 <h3 align="center">This Node.js app demonstrates some of the Natural Language Classifier service features.</h3>
 <p align="center">
